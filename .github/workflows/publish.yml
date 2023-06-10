@@ -2,7 +2,7 @@ name: publish
 on: [push]
 jobs:
   publish-hugo-drone-docker-image:
-    runs-on: rockylinux-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Login to GitHub Container Registry
